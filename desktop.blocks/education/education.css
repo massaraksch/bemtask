@@ -1,0 +1,39 @@
+.education
+{
+	padding-top: 5px;
+}
+
+.education__year, .education__university
+{
+   font-weight: bold;
+}
+
+.education__department
+{
+   font-style: italic;
+}
+
+.education__title
+{
+	cursor: pointer;
+	color: #4169E0;
+	text-decoration: none;
+	border-bottom: 1px solid #696969;
+}
+
+.education__item 
+{
+	display: none;
+}
+
+.education_item-show .education__item 
+{
+	display: block;
+}
+
+.education_item-show .education__title
+{
+	color: #696969;
+	text-decoration: none;
+	border-bottom: 1px solid #696969;
+}

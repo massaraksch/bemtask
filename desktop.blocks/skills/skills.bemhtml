@@ -1,0 +1,27 @@
+block('skills')(
+       content()(function() {
+        var ctx = this.ctx;
+
+        return [
+            {
+                elem: 'title',
+                content: ctx.title
+            },
+            ctx.skills.map(function(item) {
+                return {
+                    elem: 'item',
+                    content: [
+                        {
+                            elem: 'desc',
+                            content: item.desc
+                        }
+                    ]
+                };
+            })
+        ];
+    }),
+
+    elem('item').tag()('p'),
+    elem('desc').tag()(''),
+    elem('title').tag()('h3')
+   );

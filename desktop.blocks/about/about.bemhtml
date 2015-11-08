@@ -1,0 +1,33 @@
+block('about')(
+    content()(function() {
+        var ctx = this.ctx;
+
+        return [
+            {
+                elem: 'title',
+                content: ctx.title
+            },
+            ctx.about.map(function(item) {
+                return {
+                    elem: 'item',
+                    content: [
+                        {
+                            elem: 'email',
+                            content: item.email
+                        },
+                        ', ',
+                        {
+                            elem: 'skype',
+                            content: item.skype
+                        }
+                    ]
+                };
+            })
+        ];
+    }),
+
+    elem('item').tag()('p'),
+    elem('title').tag()('h3'),
+    elem('email').tag()(''),
+    elem('skype').tag()('')
+);

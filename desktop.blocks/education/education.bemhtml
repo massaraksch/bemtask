@@ -1,0 +1,41 @@
+block('education')(
+    content()(function() {
+        var ctx = this.ctx;
+
+        return [
+            {
+                elem: 'title',
+                content: ctx.title
+            },
+            
+            ctx.education.map(function(item) {
+
+                return {
+                    elem: 'item',
+                    content: [
+                        {
+                            elem: 'year',
+                            content: item.year
+                        },
+                        ' — ',
+                        {
+                            elem: 'university',
+                            content: item.university
+                        },
+                        '<br>',
+                        {
+                            elem: 'department',
+                            content: item.department
+                        }
+                    ]
+                };
+            })
+        ];
+    }),
+
+    elem('item').tag()('p'),
+    elem('title').tag()('h3'),
+    elem('year').tag()('span'),
+    elem('university').tag()('span'),
+    elem('department').tag()('span')
+);

@@ -1,0 +1,160 @@
+/* ../../desktop.blocks/about/about.css:begin */
+.about
+{
+	text-align: center;
+}
+
+.about__title
+{
+   font-size: 20px;
+   color: #696969;
+   margin-bottom: 5px;
+}
+/* ../../desktop.blocks/about/about.css:end */
+/* ../../desktop.blocks/education/education.css:begin */
+.education
+{
+	padding-top: 5px;
+}
+
+.education__year, .education__university
+{
+   font-weight: bold;
+}
+
+.education__department
+{
+   font-style: italic;
+}
+
+.education__title
+{
+	cursor: pointer;
+	color: #4169E0;
+	text-decoration: none;
+	border-bottom: 1px solid #696969;
+}
+
+.education__title:hover
+{
+	color: ellow;
+}
+
+.education__item 
+{
+	display: none;
+}
+
+.education_item-show .education__item 
+{
+	display: block;
+}
+
+.education_item-show .education__title
+{
+	color: #696969;
+	text-decoration: none;
+	border-bottom: 1px solid #696969;
+}
+/* ../../desktop.blocks/education/education.css:end */
+/* ../../desktop.blocks/job/job.css:begin */
+.job__item:last-child
+{
+	margin-bottom: 0;
+}
+
+.job__description
+{
+   font-style: italic;
+}
+
+.job__title
+{
+	cursor: pointer;
+	color: #4169E0;
+	text-decoration: none;
+	border-bottom: 1px solid #696969;
+}
+
+.job__title:hover
+{
+	color: ellow;
+}
+
+.job__item 
+{
+	display: none;
+}
+
+.job_item-show .job__item 
+{
+	display: block;
+}
+
+.job_item-show .job__title
+{
+	color: #696969;
+	text-decoration: none;
+	border-bottom: 1px solid #696969;
+}
+/* ../../desktop.blocks/job/job.css:end */
+/* ../../desktop.blocks/skills/skills.css:begin */
+.skills__item:last-child
+{
+	margin-bottom: 0;
+}
+
+.skills__title
+{
+	cursor: pointer;
+	color: #4169E0;
+	text-decoration: none;
+	border-bottom: 1px solid #696969;
+}
+
+.skills__title:hover
+{
+	color: ellow;
+}
+
+.skills__item 
+{
+	display: none;
+}
+
+.skills_item-show .skills__item 
+{
+	display: block;
+}
+
+.skills_item-show .skills__title
+{
+	color: #696969;
+	text-decoration: none;
+	border-bottom: 1px solid #696969;
+}
+/* ../../desktop.blocks/skills/skills.css:end */
+/* ../../desktop.blocks/page/page.css:begin */
+.page__inner
+{
+    width: 800px;
+    max-width: 100%;
+    margin: 2em auto;
+    padding: 1.6em;
+    font-size: 14px;
+    font-family: Arial,sans-serif;
+    line-height: 1.5;
+}
+/* ../../desktop.blocks/page/page.css:end */
+/* ../../libs/bem-components/design/common.blocks/page/_theme/page_theme_islands.styl:begin */
+html {
+  min-height: 100%;
+}
+.page_theme_islands {
+  font: 13px/15px Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  margin: 0;
+  color: #000;
+  background: #fff;
+}
+/* ../../libs/bem-components/design/common.blocks/page/_theme/page_theme_islands.styl:end */

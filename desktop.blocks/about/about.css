@@ -1,0 +1,11 @@
+.about
+{
+	text-align: center;
+}
+
+.about__title
+{
+   font-size: 20px;
+   color: #696969;
+   margin-bottom: 5px;
+}

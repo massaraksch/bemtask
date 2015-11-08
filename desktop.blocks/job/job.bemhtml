@@ -1,0 +1,47 @@
+block('job')(
+  
+    content()(function() {
+        var ctx = this.ctx;
+
+        return [
+            {
+                elem: 'title',
+                content: ctx.title
+            },
+            ctx.job.map(function(item) {
+                return {
+                    elem: 'item',
+                    content: [
+                        {
+                            elem: 'year',
+                            content: item.year
+                        },
+                        '<br>',
+                        {
+                            elem: 'company',
+                            content: item.company
+                        },
+                        '<br>',
+                        {
+                            elem: 'position',
+                            content: item.position
+                        },
+                        '<br>',
+                        {
+                            elem: 'description',
+                            content: item.description
+                        }
+                    ]
+                };
+            })
+        ];
+    }),
+    elem('item').tag()('p'),
+    elem('title').tag()('h3'),
+    elem('year').tag()('strong'),
+    elem('company').tag()(''),
+    elem('position').tag()(''),
+    elem('description').tag()('span')
+    
+    
+);
